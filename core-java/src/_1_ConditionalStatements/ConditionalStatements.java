@@ -1,4 +1,4 @@
-package _1_ControlStatements;
+package _1_ConditionalStatements;
 
 public class ConditionalStatements {
     //    -------1 if else---------
