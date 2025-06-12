@@ -1,4 +1,4 @@
-package _3_operators;
+package _operators;
 
 public class Demo7DigitSeparation {
     public static void main(String[] args) {
