@@ -3,7 +3,7 @@ package _6_class_object;
 public class access_bankaccountData {
     public static void main(String[] args) {
         System.out.println("**************public variable*************");
-int age=20;
+              int age=20;
         System.out.println("age is " +age);
 
 

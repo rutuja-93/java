@@ -1,4 +1,4 @@
-package _6_methods;
+package _7_methods;
 
 public class Demo1 {
     public static void main(String[] args) {
