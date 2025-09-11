@@ -1,11 +1,14 @@
-package _16_file_handling;
+package _16_file_handling._01_fileDemos;
 
 import java.io.File;
+import java.io.FileFilter;
 
-public class Demo11ListAllFileObjects {
+public class Demo12ListAllFileObjectsFilter {
     public static void main(String[] args) {
         File folder = new File("C:\\Users\\Admin\\Desktop\\java\\core-java\\src\\_16_file_handling");
-        File[] listOfFiles = folder.listFiles();
+
+        FileFilter fileFilter = fileObj -> fileObj.length() > 1000;
+        File[] listOfFiles = folder.listFiles(fileFilter);
         for (File file : listOfFiles) {
             System.out.println(file.getName() + "\t" + file.length() + "\t" + file.lastModified());
         }
