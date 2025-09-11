@@ -9,4 +9,4 @@ public class Demo1CreateNewFile {
         boolean isFileCreated = file.createNewFile();
         System.out.println(isFileCreated);
     }
-    }
+}
