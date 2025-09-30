@@ -1,8 +1,8 @@
-package _18_collection._1_arrayList;
+package _18_collection._1_arrayListDemos;
 
 import java.util.ArrayList;
 
-public class Demo4Remove {
+public class Demo4ArrayListRemove {
     public static void main(String[] args) {
         //create a container
         ArrayList arrayList = new ArrayList();

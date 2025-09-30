@@ -1,9 +1,9 @@
-package _18_collection._1_arrayList;
+package _18_collection._1_arrayListDemos;
 
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class Demo7Sort {
+public class Demo7ArrayListSort {
     public static void main(String[] args) {
         //sorting ---> comparison --> homogeneous data
         ArrayList arrayList = new ArrayList();

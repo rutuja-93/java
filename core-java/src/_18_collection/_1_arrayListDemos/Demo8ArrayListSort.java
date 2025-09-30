@@ -1,9 +1,9 @@
-package _18_collection._1_arrayList;
+package _18_collection._1_arrayListDemos;
 
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class Demo8Sort {
+public class Demo8ArrayListSort {
     public static void main(String[] args) {
         //sorting ---> comparison --> homogeneous data
         ArrayList arrayList = new ArrayList();
@@ -17,6 +17,8 @@ public class Demo8Sort {
         Collections.sort(arrayList);
         System.out.println("after sorting");
         System.out.println(arrayList);
+
+
 
 
     }

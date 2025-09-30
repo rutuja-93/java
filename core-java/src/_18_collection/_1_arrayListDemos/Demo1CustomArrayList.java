@@ -1,4 +1,4 @@
-package _18_collection._1_arrayList;
+package _18_collection._1_arrayListDemos;
 
 public class Demo1CustomArrayList {
     public static void main(String[] args) {
