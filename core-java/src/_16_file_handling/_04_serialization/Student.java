@@ -18,6 +18,9 @@ public class Student implements Serializable {
         this.password = password;
     }
 
+    public Student(int i, String suraj) {
+    }
+
     public int getId() {
         return id;
     }
