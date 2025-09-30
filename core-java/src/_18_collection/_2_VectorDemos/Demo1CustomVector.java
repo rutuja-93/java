@@ -1,26 +1,26 @@
-package _18_collection;
+package _18_collection._2_VectorDemos;
 
-public class Demo1CustomArrayList {
+public class Demo1CustomVector {
     public static void main(String[] args) {
-        class ArrayList {
+        class Vector {
             Object[] values;
             int capacity = 10;
             int size = 0;
 
-            ArrayList() {
+            Vector() {
                 values = new Object[capacity];
             }
 
-            ArrayList(int capacity) {
+            Vector(int capacity) {
                 if (capacity > 0) {
                     this.capacity = capacity;
                 }
                 values = new Object[this.capacity];
             }
 
-            public void add(Object obj) {
+            public synchronized void add(Object obj) {
                 if (size >= capacity) {
-                    capacity = (int) (capacity * 1.5 + 1);
+                    capacity = (int) (capacity * 2);
                     Object[] temp = new Object[capacity];
                     for (int index = 0; index < size; index++) {
                         temp[index] = values[index];
@@ -45,21 +45,21 @@ public class Demo1CustomArrayList {
             }
         }
 
-        ArrayList arrayList = new ArrayList(50);
-        arrayList.add(100);
-        arrayList.add(200);
-        arrayList.add(300);
-        arrayList.add(400);
-        arrayList.add(500);
-        arrayList.add(500);
-        arrayList.add(500);
-        arrayList.add(500);
-        arrayList.add(500);
-        arrayList.add(500);
-        arrayList.add(600);
+        Vector vector = new Vector(50);
+        vector.add(100);
+        vector.add(200);
+        vector.add(300);
+        vector.add(400);
+        vector.add(500);
+        vector.add(500);
+        vector.add(500);
+        vector.add(500);
+        vector.add(500);
+        vector.add(500);
+        vector.add(600);
 
-        arrayList.print();
-        System.out.println("size is " + arrayList.size);
-        System.out.println("capacity is " + arrayList.capacity);
+        vector.print();
+        System.out.println("size is " + vector.size);
+        System.out.println("capacity is " + vector.capacity);
     }
 }
